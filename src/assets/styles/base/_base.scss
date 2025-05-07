@@ -1,0 +1,55 @@
+@use '../utils/fonts.scss' as fonts;
+@use '../utils/colors.scss' as colors;
+@use '../utils/size.scss' as size;
+@use '../utils/bold.scss' as bold;
+@use "sass:map";
+
+html, body { 
+    background-color: map.get(colors.$gray, '200');
+    font-family: map.get(fonts.$paragraph, 'primary'), sans-serif;
+    font-size: map.get(size.$paragraph, '600');
+    font-weight: map.get(bold.$bold, '500');
+    color: map.get(colors.$gray, '700');
+};
+
+h1 { 
+    font-family: map.get(fonts.$title, 'primary'), sans-serif;
+    font-size: map.get(size.$title, 'h1');
+    font-weight: map.get(bold.$bold, '900');
+    color: map.get(colors.$gray, '700');
+};
+
+h2 { 
+    font-family: map.get(fonts.$title, 'primary'), sans-serif;
+    font-size: map.get(size.$title, 'h2');
+    font-weight: map.get(bold.$bold, '800');
+    color: map.get(colors.$gray, '700');
+};
+
+h3 { 
+    font-family: map.get(fonts.$title, 'primary'), sans-serif;
+    font-size: map.get(size.$title, 'h3');
+    font-weight: map.get(bold.$bold, '700');
+    color: map.get(colors.$gray, '700');
+};
+
+h4 { 
+    font-family: map.get(fonts.$title, 'primary'), sans-serif;
+    font-size: map.get(size.$title, 'h4');
+    font-weight: map.get(bold.$bold, '600');
+    color: map.get(colors.$gray, '700');
+};
+
+h5 { 
+    font-family: map.get(fonts.$title, 'primary'), sans-serif;
+    font-size: map.get(size.$title, 'h5');
+    font-weight: map.get(bold.$bold, '500');
+    color: map.get(colors.$gray, '700');
+};
+
+h6 { 
+    font-family: map.get(fonts.$title, 'primary'), sans-serif;
+    font-size: map.get(size.$title, 'h6');
+    font-weight: map.get(bold.$bold, '400');
+    color: map.get(colors.$gray, '700');
+};
