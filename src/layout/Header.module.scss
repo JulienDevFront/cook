@@ -1,0 +1,20 @@
+@use '../assets/styles/utils/size.scss' as size;
+@use '../assets/styles/components/button.scss' as button;
+@use 'sass:map';
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 2rem 6rem;
+    h1 > a {
+        @include button.button-header-link-home;
+        line-height: map.get(size.$title, 'h1');
+    };
+    ul {
+        display: flex;
+        li > button  {
+            @include button.button-header-primary;
+        };
+    };
+};

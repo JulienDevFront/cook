@@ -1,0 +1,25 @@
+@use '../utils/fonts.scss' as fonts;
+@use '../utils/colors.scss' as colors;
+@use '../utils/size.scss' as size;
+@use '../utils/bold.scss' as bold;
+@use "sass:map";
+
+@mixin button-header-primary(){
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    color: map.get(colors.$gray, '900');
+    font-size: map.get(size.$paragraph, '400');
+    font-weight: map.get(bold.$bold, '600');
+    border-radius: 1rem;
+    border: 2px solid map.get(colors.$gray, '900');
+    background-color: map.get(colors.$red, '500');
+    text-shadow: 1px 1px 0px map.get(colors.$red, '600');
+    box-shadow: 2px 2px 0px map.get(colors.$gray, '900');
+};
+
+@mixin button-header-link-home(){
+    color: map.get(colors.$gray, '900');
+    font-size: map.get(size.$title, 'h1');
+    font-weight: map.get(bold.$bold, '600');
+    text-shadow: 2px 2px 2px map.get(colors.$gray, '400');
+};

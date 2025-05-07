@@ -1,0 +1,11 @@
+@use '../assets/styles/utils/colors.scss' as colors;
+@use '../assets/styles/utils/size.scss' as size;
+@use 'sass:map';
+
+.Footer {
+    padding: 1rem;
+    text-align: center;
+    color: map.get(colors.$gray, '200');
+    font-size: map.get(size.$paragraph, '300');
+    background-color: map.get(colors.$gray, '900');
+};
