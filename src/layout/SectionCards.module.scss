@@ -1,0 +1,9 @@
+.SectionCards {
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    grid-auto-columns: repeat(3, 280px);
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: bisque;
+}
